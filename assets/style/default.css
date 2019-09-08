@@ -1,0 +1,47 @@
+header{
+	background-color: white;
+	padding: 20px;
+	font-size: 20px;
+
+}
+header a{
+	color: white;
+}
+header a:hover{
+	color: aqua;	
+	text-decoration: none;
+}
+
+header img{
+	width: 245px;
+	height: 75px;
+}
+
+.sidebar{
+	background-color: white;
+	font-size: 20px;
+	border-left: 5px solid black;	
+}
+.sidebar-box{
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: white;
+
+}
+.sidebar ul{
+	list-style: square;
+}
+.content{
+	background-color: white;
+}
+.content article a{
+	border: 1px solid blue;
+
+}
+.container{
+	background-color: white;
+}
+footer{
+	margin-top: 100px;
+
+}
