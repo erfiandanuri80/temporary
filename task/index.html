@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Task - RIO ERFIAN 180411100040</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">RIO ERFIAN 180411100040</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="..">Home</a>
+                            </li>
+                            <li class="active">
+                                <a href="./">Task</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="..">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#pusat-tugas-penambangan-data">Pusat Tugas Penambangan Data</a></li>
+            <li><a href="#tugas-10">TUGAS 1.0</a></li>
+            <li><a href="#tugas-20">TUGAS 2.0</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="pusat-tugas-penambangan-data">Pusat Tugas Penambangan Data</h1>
+<p>For full documentation visit <a href="https://github.com/erfiandanuri80/Asli_PENAMBANGAN_DATA/">github.com/erfiandanuri80/Asli_PENAMBANGAN_DATA</a>.</p>
+<h3 id="tugas-10"><u><strong>TUGAS 1.0</strong></u></h3>
+<h5 id="statistika-deskriptif">Statistika Deskriptif</h5>
+<p>Statistik deskriptif merupakan proses analisis statistik yang fokus kepada manejemen,   penyajian, dan klasifikasi data. Dengan proses ini, data yang disajikan akan menjadi lebih menarik lebih mudah dipahami, dan mampu memberikan makna lebih bagi pengguna data. Ada beberapa bentuk media yang biasa digunakan sebagai analisis deksriptif, diantaranya adalah tabel, grafik, diagram, infografis, dll. Tabel dan grafik adalah media yang biasa kita gunakan dalam menyajikan statistik deskriptif.</p>
+<h5 id="manfaat-dari-statistik-deskriptif">Manfaat dari statistik deskriptif</h5>
+<ol>
+<li><strong>Memberikan gambaran dan deskripsi bagaimana informasi yang dimiliki data tersebut</strong></li>
+</ol>
+<p>Statistik deskriptif haruslah mampu memberikan gambaran informasi apa saja yang bisa didapat secara dari data yang kita gunakan. Daripada hanya menggunakan angka-angka tanpa format yang baku, akan lebih menarik bila ditampilan dalam bentuk grafik dan tabel.</p>
+<ol>
+<li><strong>Menjelaskan karakteristik sebuah data</strong></li>
+</ol>
+<p>Statistik deskriptif juga memberikan karakteristik tentang data yang digunakan. Hal ini penting karena kondisi data yang digunakan akan memengaruhi seluruh analisis data yang kita lakukan.</p>
+<p><em>download Book1.csv terdahulu</em><a href="https://drive.google.com/file/d/1NkRYx_Pw4CMtbB3xzS6Wav9KRPVFuawe/view?usp=sharing"> disini</a></p>
+<pre><code>import pandas as pd
+from scipy import stats
+d=pd.read_csv('Book1.csv')
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="right">beratbadan</th>
+<th align="right">tinggibadan</th>
+<th align="right">umur</th>
+<th>banyak saudara</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">0</td>
+<td align="right">67</td>
+<td align="right">157</td>
+<td align="right">22</td>
+<td>5</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td align="right">76</td>
+<td align="right">165</td>
+<td align="right">21</td>
+<td>2</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">84</td>
+<td align="right">156</td>
+<td align="right">22</td>
+<td>2</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">51</td>
+<td align="right">167</td>
+<td align="right">22</td>
+<td>2</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">93</td>
+<td align="right">192</td>
+<td align="right">21</td>
+<td>5</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">90</td>
+<td align="right">171</td>
+<td align="right">30</td>
+<td>4</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">93</td>
+<td align="right">187</td>
+<td align="right">16</td>
+<td>2</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">77</td>
+<td align="right">163</td>
+<td align="right">26</td>
+<td>4</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="right">71</td>
+<td align="right">153</td>
+<td align="right">28</td>
+<td>3</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="right">54</td>
+<td align="right">167</td>
+<td align="right">18</td>
+<td>5</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">78</td>
+<td align="right">196</td>
+<td align="right">18</td>
+<td>5</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">85</td>
+<td align="right">159</td>
+<td align="right">22</td>
+<td>4</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="right">72</td>
+<td align="right">192</td>
+<td align="right">25</td>
+<td>3</td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td align="right">88</td>
+<td align="right">164</td>
+<td align="right">20</td>
+<td>3</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td align="right">87</td>
+<td align="right">172</td>
+<td align="right">25</td>
+<td>3</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td align="right">86</td>
+<td align="right">198</td>
+<td align="right">28</td>
+<td>3</td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td align="right">91</td>
+<td align="right">177</td>
+<td align="right">29</td>
+<td>1</td>
+</tr>
+<tr>
+<td align="right">17</td>
+<td align="right">66</td>
+<td align="right">174</td>
+<td align="right">30</td>
+<td>4</td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td align="right">72</td>
+<td align="right">164</td>
+<td align="right">19</td>
+<td>1</td>
+</tr>
+<tr>
+<td align="right">19</td>
+<td align="right">70</td>
+<td align="right">183</td>
+<td align="right">16</td>
+<td>4</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td align="right">86</td>
+<td align="right">170</td>
+<td align="right">25</td>
+<td>2</td>
+</tr>
+<tr>
+<td align="right">21</td>
+<td align="right">50</td>
+<td align="right">199</td>
+<td align="right">26</td>
+<td>1</td>
+</tr>
+<tr>
+<td align="right">22</td>
+<td align="right">59</td>
+<td align="right">185</td>
+<td align="right">30</td>
+<td>2</td>
+</tr>
+<tr>
+<td align="right">23</td>
+<td align="right">69</td>
+<td align="right">198</td>
+<td align="right">18</td>
+<td>5</td>
+</tr>
+<tr>
+<td align="right">24</td>
+<td align="right">58</td>
+<td align="right">184</td>
+<td align="right">26</td>
+<td>4</td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td align="right">62</td>
+<td align="right">168</td>
+<td align="right">19</td>
+<td>5</td>
+</tr>
+<tr>
+<td align="right">26</td>
+<td align="right">54</td>
+<td align="right">188</td>
+<td align="right">24</td>
+<td>3</td>
+</tr>
+<tr>
+<td align="right">27</td>
+<td align="right">90</td>
+<td align="right">187</td>
+<td align="right">29</td>
+<td>1</td>
+</tr>
+<tr>
+<td align="right">28</td>
+<td align="right">63</td>
+<td align="right">197</td>
+<td align="right">19</td>
+<td>3</td>
+</tr>
+<tr>
+<td align="right">29</td>
+<td align="right">85</td>
+<td align="right">172</td>
+<td align="right">23</td>
+<td>2</td>
+</tr>
+<tr>
+<td align="right">...</td>
+<td align="right">...</td>
+<td align="right">...</td>
+<td align="right">...</td>
+<td>...</td>
+</tr>
+<tr>
+<td align="right">70</td>
+<td align="right">67</td>
+<td align="right">159</td>
+<td align="right">21</td>
+<td>3</td>
+</tr>
+<tr>
+<td align="right">71</td>
+<td align="right">68</td>
+<td align="right">173</td>
+<td align="right">23</td>
+<td>1</td>
+</tr>
+<tr>
+<td align="right">72</td>
+<td align="right">66</td>
+<td align="right">154</td>
+<td align="right">23</td>
+<td>2</td>
+</tr>
+<tr>
+<td align="right">73</td>
+<td align="right">99</td>
+<td align="right">177</td>
+<td align="right">28</td>
+<td>2</td>
+</tr>
+<tr>
+<td align="right">74</td>
+<td align="right">59</td>
+<td align="right">197</td>
+<td align="right">20</td>
+<td>5</td>
+</tr>
+<tr>
+<td align="right">75</td>
+<td align="right">84</td>
+<td align="right">183</td>
+<td align="right">22</td>
+<td>4</td>
+</tr>
+<tr>
+<td align="right">76</td>
+<td align="right">68</td>
+<td align="right">184</td>
+<td align="right">17</td>
+<td>2</td>
+</tr>
+<tr>
+<td align="right">77</td>
+<td align="right">95</td>
+<td align="right">195</td>
+<td align="right">17</td>
+<td>2</td>
+</tr>
+<tr>
+<td align="right">78</td>
+<td align="right">91</td>
+<td align="right">157</td>
+<td align="right">28</td>
+<td>5</td>
+</tr>
+<tr>
+<td align="right">79</td>
+<td align="right">87</td>
+<td align="right">194</td>
+<td align="right">16</td>
+<td>4</td>
+</tr>
+<tr>
+<td align="right">80</td>
+<td align="right">62</td>
+<td align="right">194</td>
+<td align="right">20</td>
+<td>2</td>
+</tr>
+<tr>
+<td align="right">81</td>
+<td align="right">81</td>
+<td align="right">186</td>
+<td align="right">27</td>
+<td>4</td>
+</tr>
+<tr>
+<td align="right">82</td>
+<td align="right">69</td>
+<td align="right">175</td>
+<td align="right">29</td>
+<td>2</td>
+</tr>
+<tr>
+<td align="right">83</td>
+<td align="right">91</td>
+<td align="right">174</td>
+<td align="right">29</td>
+<td>4</td>
+</tr>
+<tr>
+<td align="right">84</td>
+<td align="right">65</td>
+<td align="right">178</td>
+<td align="right">21</td>
+<td>2</td>
+</tr>
+<tr>
+<td align="right">85</td>
+<td align="right">61</td>
+<td align="right">156</td>
+<td align="right">19</td>
+<td>1</td>
+</tr>
+<tr>
+<td align="right">86</td>
+<td align="right">83</td>
+<td align="right">156</td>
+<td align="right">19</td>
+<td>4</td>
+</tr>
+<tr>
+<td align="right">87</td>
+<td align="right">93</td>
+<td align="right">185</td>
+<td align="right">18</td>
+<td>4</td>
+</tr>
+<tr>
+<td align="right">88</td>
+<td align="right">63</td>
+<td align="right">187</td>
+<td align="right">28</td>
+<td>5</td>
+</tr>
+<tr>
+<td align="right">89</td>
+<td align="right">79</td>
+<td align="right">184</td>
+<td align="right">17</td>
+<td>5</td>
+</tr>
+<tr>
+<td align="right">90</td>
+<td align="right">86</td>
+<td align="right">157</td>
+<td align="right">23</td>
+<td>5</td>
+</tr>
+<tr>
+<td align="right">91</td>
+<td align="right">86</td>
+<td align="right">172</td>
+<td align="right">26</td>
+<td>4</td>
+</tr>
+<tr>
+<td align="right">92</td>
+<td align="right">57</td>
+<td align="right">196</td>
+<td align="right">28</td>
+<td>3</td>
+</tr>
+<tr>
+<td align="right">93</td>
+<td align="right">52</td>
+<td align="right">200</td>
+<td align="right">15</td>
+<td>5</td>
+</tr>
+<tr>
+<td align="right">94</td>
+<td align="right">64</td>
+<td align="right">162</td>
+<td align="right">18</td>
+<td>3</td>
+</tr>
+<tr>
+<td align="right">95</td>
+<td align="right">57</td>
+<td align="right">168</td>
+<td align="right">16</td>
+<td>1</td>
+</tr>
+<tr>
+<td align="right">96</td>
+<td align="right">88</td>
+<td align="right">171</td>
+<td align="right">18</td>
+<td>4</td>
+</tr>
+<tr>
+<td align="right">97</td>
+<td align="right">58</td>
+<td align="right">160</td>
+<td align="right">23</td>
+<td>1</td>
+</tr>
+<tr>
+<td align="right">98</td>
+<td align="right">99</td>
+<td align="right">155</td>
+<td align="right">29</td>
+<td>5</td>
+</tr>
+<tr>
+<td align="right">99</td>
+<td align="right">57</td>
+<td align="right">168</td>
+<td align="right">18</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>mendescribe kan kolom :</p>
+<pre><code>df=pd.read_csv('Book1.csv',usecols=[&quot;beratbadan&quot;,&quot;tinggibadan&quot;,&quot;umur&quot;,&quot;banyaksaudara&quot;])
+df.describe()
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="right">beratbadan</th>
+<th align="right">tinggibadan</th>
+<th align="right">umur</th>
+<th>banyaksaudara</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">count</td>
+<td align="right">100.000000</td>
+<td align="right">100.000000</td>
+<td align="right">100.000000</td>
+<td>100.000000</td>
+</tr>
+<tr>
+<td align="right">mean</td>
+<td align="right">73.190000</td>
+<td align="right">175.070000</td>
+<td align="right">22.390000</td>
+<td>3.040000</td>
+</tr>
+<tr>
+<td align="right">std</td>
+<td align="right">13.813838</td>
+<td align="right">14.286573</td>
+<td align="right">4.483178</td>
+<td>1.434918</td>
+</tr>
+<tr>
+<td align="right">min</td>
+<td align="right">50.000000</td>
+<td align="right">150.000000</td>
+<td align="right">15.000000</td>
+<td>1.000000</td>
+</tr>
+<tr>
+<td align="right">25%</td>
+<td align="right">61.750000</td>
+<td align="right">163.750000</td>
+<td align="right">18.750000</td>
+<td>2.000000</td>
+</tr>
+<tr>
+<td align="right">50%</td>
+<td align="right">71.000000</td>
+<td align="right">174.000000</td>
+<td align="right">22.000000</td>
+<td>3.000000</td>
+</tr>
+<tr>
+<td align="right">75%</td>
+<td align="right">86.000000</td>
+<td align="right">186.250000</td>
+<td align="right">26.250000</td>
+<td>4.000000</td>
+</tr>
+<tr>
+<td align="right">max</td>
+<td align="right">99.000000</td>
+<td align="right">200.000000</td>
+<td align="right">30.000000</td>
+<td>5.000000</td>
+</tr>
+</tbody>
+</table>
+<h5 id="ukuran-statistik-deskriptif">Ukuran statistik deskriptif</h5>
+<p>Secara umum, ada 2 jenis pengukuran statistik deskriptif.</p>
+<h6 id="1-ukuran-pemusatan">1. Ukuran pemusatan</h6>
+<p>Ukuran pemusatan adalah metode paling lazim yang digunakan dalam analisis deskriptif. Metode ini fokus untuk menggambarkan kondisi data di titik pusat. Secara umum, kita bisa melihat bagaimana kondisi data dengan melihat dimana letak pusat data tersebut. Biasanya, pusat data sendiri akan berada pada nilai tengah, meskipun tida selalu demikian. Untuk membuktikan hal ini secara matematis maka pengukuran yang sering digunakan adalah mean, median, dan modus. Kita bahas satu per satu.</p>
+<p>$$</p>
+<p>$$</p>
+<ol>
+<li><strong>Mean</strong> merupakan rata-rata dari sekumpulan data yang kita miliki. Formulanya sangat sederhana. Anda hanya perlu menjumlah nilai dari seluruh data yang dimiliki dan membaginya dengan jumlah data tersebut.</li>
+</ol>
+<pre><code>print(&quot;rata-rata   &quot;,df['beratbadan'].mean())
+</code></pre>
+
+<ol>
+<li><strong>Median</strong> adalah nilai tengah dari sebuah data. Bila kita memiliki sekumpulan data, kita bisa mengurutkan data tersebut dari nilai terkecil hingga terbesar. Jika kita memiliki jumlah data ganjil, maka nilai tengah data tersebut akan langsung menjadi median. Namun bila kita memiliki data genap, kita perlu menemukan nilai rata-rata dari nilai tengah data tersebut.</li>
+</ol>
+<pre><code>print(&quot;median          &quot;,df['beratbadan'].quantile(0.5))
+</code></pre>
+
+<ol>
+<li><strong>Modus</strong> adalah nilai yang paling sering muncul dalam sekelompok data. Kita hanya perlu melihat nilai mana yang paling sering muncul dalam kelompok tersebut. Bila jumlah frekuensi setiap data sama, maka nilai modus tidak ada.</li>
+</ol>
+<pre><code>mode=stats.mode(df)
+print(&quot;Nilai modus {} dengan jumlah {}&quot;.format(mode.mode[0], mode.count[0]))
+</code></pre>
+
+<h6 id="2-ukuran-keragaman">2. Ukuran keragaman</h6>
+<p>Ukuran keragaman merupakan ukuran untuk menyajikan bagaimana sebaran dari data tersebut. Ukuran keragaman menunjukkan bagaimana kondisi sebuah data menyebar di kelompok data yang kita miliki. Hal ini memungkinkan kita untuk menganalisis seberapa jauh data-data tersebut tersebar dari ukuran pemusatannya. Bila sebaran datanya rendah, ini menunjukkan bahwa data tersebar tidak jauh dari pusatnya. Bila sebarannya jauh ini menunjukkan bahwa data tersebar jauh dari pusatnya.</p>
+<ol>
+<li><strong>Range</strong></li>
+</ol>
+<p>Range atau rentang merupakan selisih dari nilai terbesar dan nilai terkecil yang kita miliki. Range merupkan hal yang paling sederhana dan paling mudah dimengerti dalam ukuran penyebaran. Range menunjukkan seberapa jauh sebaran dengan mengabaikan bentuk distribusinya.</p>
+<ol>
+<li><strong>Quartiles Range</strong></li>
+</ol>
+<p>Rentang Quartiles atau rentang kuartil merupakan ukuran penyebaran yang membagi data menjadi 4 bagian. Sesuai dengan namanya, kuartil membagi data menjadi 25 persen di setiap bagiannya.</p>
+<p>Ada 3 jenis nilai kuartil yang perlu kita tahu :</p>
+<ul>
+<li>Q1 atau kuartil bawah yang memuat 25 persen dari data dengan nilai terendah</li>
+<li>Q2 atau kuartil tengah, yang membagi data menjadi 2 bagian sama besar 50 persen terkecil dan 50 persen terbesar. Q2 juga memiliki nilai yang sama dengan median</li>
+<li>Q3 atau kuartil atas yang memuat 25 persen dari data dengan nilai tertinggi.</li>
+</ul>
+<pre><code>print(&quot;Q1       &quot;,df['beratbadan'].quantile(0.25))
+print(&quot;Q2       &quot;,df['beratbadan'].quantile(0.5))
+print(&quot;Q3       &quot;,df['beratbadan'].quantile(0.75))
+</code></pre>
+
+<ol>
+<li><strong>Persentil</strong></li>
+</ol>
+<p>Persentil merupakan ukuran penyebaran yang membagi data menjadi 100 bagian sama besar.</p>
+<ol>
+<li><strong>Desil</strong></li>
+</ol>
+<p>Desil merupakan ukuran penyebaran yang membagi data menjadi 10 bagian sama besar.</p>
+<ol>
+<li><strong>Varians</strong></li>
+</ol>
+<p>Varians merupakan ukuran seberapa jauh menyebar dari nilai rata-ratanya. Semakin kecil nilai varians, semakin dekat sebaran data dengan rata-rata. Semakin besar nilai varian, semakin besar sebaran data terhadap nilai rata-ratanya.</p>
+<pre><code>print(&quot;Variansi         &quot;,&quot;{0:.2f}&quot;.format(round(df['beratbadan'].var(),2)))
+</code></pre>
+
+<ol>
+<li><strong>Standar deviasi</strong></li>
+</ol>
+<p>Standar deviasi merupakan ukuran lain dari sebaran data terhadap rata-ratanya. Bila anda menggunakan varians, maka nilai yang anda dapatkan sangatlah besar. Nilai ini tidak mampu menggambarkan bagaimana sebaran data yang sebenarnya terhadap rata-rata. Untuk mendapatkan nilai yang lebih mudah diinterpretasikan, standar deviasi adalah ukuran yang lebih tepat. Standar deviasi menghasilkan nilai yang lebih kecil dan mampu menjelaskan bagaimana sebaran data terhadap rata-rata. Standar deviasi disebut juga dengan simpangan baku.</p>
+<pre><code>print(&quot;Standar Deviasi   &quot;,&quot;{0:.2f}&quot;.format(round(df['beratbadan'].std(),2)))
+</code></pre>
+
+<ol>
+<li><strong>Skewness</strong></li>
+</ol>
+<p>Skewness merupakan ukuran yang menunjukkan bagaimana kemencengan sebuah data terhadap rata-ratanya. Skewness juga bisa dikatakan sebagai ukuran ketidaksimetrisan sebuah data.</p>
+<ul>
+<li>Sk &gt; 0 artinya kurva dikatakan menceng kanan (positif)</li>
+<li>Sk = 0 artinya kurva normal </li>
+<li>Sk &lt; 0 artinya menceng kiri (negatif)</li>
+</ul>
+<pre><code>print(&quot;kemencengan          &quot; ,&quot;{0:.6f}&quot;.format(round(df['beratbadan'].skew(),6)))
+</code></pre>
+
+<h5 id="code">Code</h5>
+<pre><code>import pandas as pd
+from scipy import stats
+df=pd.read_csv(&quot;Book1.csv&quot;,usecols=[0])
+
+print(&quot;jumlah data  &quot;,df['beratbadan'].count())
+print(&quot;rata-rata   &quot;,df['beratbadan'].mean())
+print(&quot;nila minimal &quot;,df['beratbadan'].min())
+print(&quot;Q1       &quot;,df['beratbadan'].quantile(0.25))
+print(&quot;Q2          &quot;,df['beratbadan'].quantile(0.5))
+print(&quot;Q3          &quot;,df['beratbadan'].quantile(0.75))
+print(&quot;Nilai Max   &quot;,df['beratbadan'].max())
+mode=stats.mode(df)
+print(&quot;Nilai modus {} dengan jumlah {}&quot;.format(mode.mode[0], mode.count[0]))
+print(&quot;kemencengan          &quot; ,&quot;{0:.6f}&quot;.format(round(df['beratbadan'].skew(),6)))
+print(&quot;Standar Deviasi   &quot;,&quot;{0:.2f}&quot;.format(round(df['beratbadan'].std(),2)))
+print(&quot;Variansi         &quot;,&quot;{0:.2f}&quot;.format(round(df['beratbadan'].var(),2)))
+
+</code></pre>
+
+<p>hasil :</p>
+<pre><code>jumlah data   100
+rata-rata    73.19
+nila minimal  50
+Q1        61.75
+Q2           71.0
+Q3           86.0
+Nilai Max    99
+kemencengan 0.19
+Nilai modus [72] dengan jumlah [5]
+kemencengan           0.185820
+Standar Deviasi    13.81
+Variansi          190.82
+</code></pre>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<h3 id="tugas-20"><u><strong>TUGAS 2.0</strong></u></h3>
+<p><strong>Mengukur Jarak Data</strong></p>
+<p><strong>Mengukur Jarak Tipe Numerik</strong></p>
+<p>link tugas 2</p>
+<p><a href="https://github.com/erfiandanuri80/Asli_PENAMBANGAN_DATA/tree/master/asset">https://github.com/erfiandanuri80/Asli_PENAMBANGAN_DATA/tree/master/asset</a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
